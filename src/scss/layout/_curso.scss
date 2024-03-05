@@ -1,0 +1,110 @@
+@use 'base/variables' as va;
+
+
+.cursos-progra{
+    display: flex;
+     flex-direction: column;
+     align-items: center;
+     min-width: 20rem;
+     border: 5px solid va.$negro;
+     background-color: transparent;
+     line-height: 0;
+
+     .curso-imagen{
+        button {
+          padding: 0;
+          border: none;
+          &:hover{
+            cursor: pointer;
+          }
+        }
+     }
+
+     .curso-titulo{
+      padding: 0 1rem;
+      flex-grow: 9999;
+        h4{
+          text-align: center;
+          color: va.$naranja;
+        }
+
+        p{
+          text-align: justify;
+          line-height: 1.2;        
+        }
+     }
+
+     .curso-enlace{
+        padding-bottom: 2rem;
+        margin-top: auto;
+
+        button{
+          margin-right: 1.5rem;
+          background-color: black;
+          border: 2px solid va.$negro;
+          border-radius: 10%;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          &:hover{
+            cursor: pointer;
+          }
+
+          svg{
+            stroke: va.$blanco;
+            fill: va.$negro;
+            width: 25px;
+            height: 25px;
+          }
+        }
+
+     }
+
+    .curso-tecnologia{
+      padding: 0 0 2rem 0;
+      display: flex;
+      column-gap: 1rem;
+      row-gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: auto;
+      
+
+      button{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        padding: 0.2rem 1rem;   
+        margin: 0;   
+        border-radius: 5px;   
+        border: none; 
+        //flex-basis: calc(50% - 0.5rem);
+        
+            
+
+        svg{
+          width: 20px;
+          height: 20px;
+          
+        }
+
+        p{
+          margin: 0;
+          padding: 0;
+          font-size: 1.5rem;
+          color: va.$blanco;
+          text-transform: capitalize;
+          
+        } 
+      }
+
+      .html{
+        background-color: va.$color_html;
+      }
+      .css{
+        background-color: va.$color_css;
+      }
+
+    }
+}

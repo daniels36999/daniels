@@ -1,0 +1,207 @@
+@use 'base/variables' as va;
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../assets/img/footer.jpg);
+    font-family: va.$fuente_parrafo2;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    //scroll-snap-align: start;
+
+
+    .footer-titulos{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        h1, h2{
+            color:va.$color_titulos;
+            margin: 0 0 0.5rem 0;
+            text-shadow: 2px 5px 20px $color_text_sombra;
+            font-family: va.$fuente_titulo;
+        }
+
+        h1{
+            font-size: 3rem; 
+        }
+        h2{
+            font-size: 2.5rem; 
+        }
+    }
+
+    p{
+        font-size: 1.6rem;
+        color: va.$blanco;
+        line-height: 1.2;
+    }
+
+    button{
+        background-color: transparent;
+        padding: 0; // Elimina el espacio interno
+        margin: 0;// Elimina el espacio exterio
+    }
+
+
+}
+
+.footer-container-1{
+    background-color:va.$color_bg5;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 2vw; 
+    row-gap: 2rem;
+    padding: 3vw 5vw; 
+
+    @include telefono{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include tablet{
+        grid-template-columns: repeat(3, 1fr);
+        padding: 3rem 5vw;
+    }
+
+    @include desktop{
+        padding: 3rem 2vw;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+
+
+    p, a{
+        color: va.$blanco;
+        margin: 0;
+        text-align: justify;
+    }
+
+    .footer-information{
+        //background-color: va.$color_footer_cont;
+        background-color: va.$color_bg4;
+        padding: 1rem 2vw ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        border-radius: 10px;
+        //box-shadow: 0 0 25px $color_text_sombra;
+
+        @include telefono{
+            align-items: center;
+        }
+        @include tablet{
+            align-items: center;
+        }
+    
+        @include desktop{
+            align-items: flex-start;
+        }
+
+       //PARA EL ULTIMO CONTENEDOR DEL FOOTER SE ESCALE HORIZONTAL 
+        &.foot-cont-final{
+            grid-column: 1/1;
+            @include telefono{
+                grid-column: 2/2;
+            }
+            @include tablet{
+                grid-column: 1/4;
+            }
+        
+            @include desktop{
+                grid-column: 4/4;
+
+            }
+        }
+
+
+        //BLOQUE 1-----------------
+        .footer-social-1{
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0;
+            gap: 2rem;
+            width: 100%;
+
+            a{
+                line-height: 0;
+            }
+        }
+
+        //BLOQUE 2-----------------
+        .address-contenedor{
+            .footer-address{
+                display: flex;
+                gap: 1.5vw;
+                padding-bottom: 1rem;
+                width: 100%;
+             
+                svg{
+                    stroke: va.$color_titulos;
+                    width: 30px; 
+                    height: 30px; 
+                    max-width: 10vw; 
+                    max-height: 10vw; 
+                    text-shadow: 2px 2px 4px rgba(255, 253, 253, 0.8);
+                }
+    
+                .text-largo{
+                    flex-wrap: wrap;
+                    word-break: break-all;
+                }
+            }
+
+        }
+
+
+        //BLOQUE 3-----------------
+        .footer-links{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            a{
+                font-size: 1.5rem;
+                &:hover{
+                    cursor: pointer;
+                    color:va.$color_text_sombra;
+                    font-weight: bold;
+                }
+            }  
+        }
+
+        //--bloque 4
+        .footer-logo{
+            width: 100%;
+            margin-top: auto;
+
+            img{
+                display: block;
+                margin: auto;
+                width: 70%;
+                filter: drop-shadow(0px 0px 20px rgba(128, 225, 255, 0.8));
+
+                &:hover{
+                    filter: drop-shadow(0px 0px 30px rgba(255, 255, 255, 0.9));
+                }
+            }
+    }
+}
+}
+
+.footer-container-2{
+    background-color: va.$negro;
+    display: flex;
+    justify-content: center;
+    padding: 0.5vw 3vw ;
+    p, a{
+        
+        font-family: va.$fuente_subtitulo;
+        font-weight: 400;
+        color: va.$gris;
+        font-size: 1vw;
+    }
+    button{
+        color: va.$blanco;
+        border: none;
+    }
+}

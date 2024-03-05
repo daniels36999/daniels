@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Courier+Prime:wght@400;700&family=Inconsolata&family=Rationale&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lilita+One&family=Madimi+One&family=Piedra&display=swap');
+
+
+
+
+// Fuentes
+$fuente_titulo: 'Lilita One', Helvetica, sans-serif;
+$fuente_subtitulo: 'Arvo', Helvetica, sans-serif;
+$fuente_titulo2: 'Piedra', Helvetica, sans-serif;
+$fuente_parrafo: 'Roboto Condensed', Helvetica, sans-serif;
+$fuente_parrafo2: 'Madimi One', Helvetica, sans-serif;
+$fuente_hack:'Anonymous Pro', Helvetica, sans-serif;
+
+
+// Tamaño de Media Queries
+$telefono: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+
+// Colores
+$negro: #000000;
+$blanco: #FFFFFF;
+$naranja:#FF6F0F;
+$gris:#a0a0a0;
+$color_titulos:#0099ff;
+
+//Color FOoter
+$color_footer_cont:rgba(0, 24, 66, 0.8);
+$negro_bg:rgba(0, 0, 0, 0.5);
+$color_bg1:rgba(0, 0, 0, 0.893);
+$color_bg2:rgba(0,0,0,0.9);
+$color_bg3:rgba(0, 0, 0, 0.633);
+$color_bg4:rgba(0, 0, 0, 0.495);
+$color_bg5:rgba(0, 0, 0, 0.29);
+$color_text_sombra:rgba(4, 117, 145, 0.9);
+
+//Colores Tecnologias
+$color_html: #E34F26;
+$color_css: #1572B6;
+
+//Colores Tecnologias
+$color_web: #00fffb;
+$color_github: #000000;
+$color_linkedin: #0077b5;
+$color_grabcad: #ff1900;
+
+//Colores Consola
+$color_hac_azul:#00008b;
+
+// Fuentes
+$delgada: 300;
+$regular : 400;
+$bold: 700;
+$black: 900
