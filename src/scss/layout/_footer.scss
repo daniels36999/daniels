@@ -192,13 +192,15 @@
     background-color: va.$negro;
     display: flex;
     justify-content: center;
-    padding: 0.5vw 3vw ;
+    align-items: center;
+    padding: 0.6vw 3vw ;
+    min-height: 6rem;
     p, a{
         
         font-family: va.$fuente_subtitulo;
         font-weight: 400;
         color: va.$gris;
-        font-size: 1vw;
+        font-size: 1.2vw;
     }
     button{
         color: va.$blanco;

@@ -147,7 +147,14 @@
       justify-content: center;
       svg{
         display: block;
-        stroke: rgb(92, 92, 92);
+        stroke: rgb(0, 75, 151);
+        width: 80px;
+        cursor: pointer;
+        transition: filter 0.6s ease;
+
+        &:hover{
+          filter: drop-shadow(0px 0px 3px rgb(0, 123, 255));
+        }
       }
 
       //RESPONSIVE 
@@ -186,7 +193,4 @@
     grid-column: 3/4;
     justify-self: right;
   }
-
-
-
   }

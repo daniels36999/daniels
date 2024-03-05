@@ -72,7 +72,7 @@ function Footer() {
                      <h2>Enlaces</h2>
                 </div>
                 <div className="footer-links centrar-links">
-                    <Link className="btn-link" to="/portafolio-daniels" >&gt;  Inicio</Link>
+                    <Link className="btn-link" to="/daniels" >&gt;  Inicio</Link>
                     <Link className="btn-link" to="/nosotros" >&gt;  Portafolio</Link>
                     <Link className="btn-link" to="#" >&gt;  Servicios</Link>
                     <Link className="btn-link" to="#" >&gt;  Blog</Link>
@@ -86,7 +86,7 @@ function Footer() {
                 </div>
                 <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
                 <div className='footer-logo'>
-                    <Link  to="/portafolio-daniels" >
+                    <Link  to="/daniels" >
                         <img src={imagenes.logo} alt="Imagen Logo" />
                     </Link>
                 </div>

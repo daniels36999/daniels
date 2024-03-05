@@ -110,6 +110,11 @@ box-shadow: none;
     position: relative;
     background: #000000ca;
     transition: 0.1s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
   }
   
   .btn2::after {

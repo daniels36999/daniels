@@ -11,54 +11,86 @@
 //PORTADA
 //--------------------------------------------
 .portada{
-   // scroll-snap-align: start;
     background-image: url(../assets/img/fondo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     position: relative;
-    height: 750px;
+    min-height: 600px;
     margin:0;
     padding: 0;
-
-
-    @include telefono{
-        height: 600px;
-      }
-      @include tablet{
-        height: 500px;
-      }
-  
-      @include desktop{
-        height: 500px;
-      }
+    display: flex;
+    align-items: stretch;
+    z-index: -1;
 
     .contenido-portada{
-        position: relative;
-        background-color: va.$color_bg3;
+        background-color: #000000e3;
         width: 100%;
-        height: 100%;
-        
-        
-        .portada-descripcion{
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            padding: 2rem 5rem;
-            height: 100%;
-            
+        z-index: -1;
+    }
 
-            .portada-desc{
-                .port-nombre{
-                    font-size: 5vw;
-                    margin: 0;
-                }
-                .port-descripcion{
-                    font-size: 1.5rem;
-                    margin: 0;
+    .cont-contenido{
+        &.contenedor{
+            background: none;
+        }
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 3rem;
+        grid-row-gap: 4rem;
+        align-items: center;
+        height: 100%;
+
+        @include telefono{
+            grid-template-columns: 1fr;
+          }
+          @include tablet{
+            grid-template-columns: 2fr 1fr;
+          }
+      
+          @include desktop{
+            grid-template-columns: 2fr 1fr;
+          }
+        .portada-desc{
+            display: flex;
+            flex-direction: column;
+            row-gap: 2rem;
+            align-items: start;
+
+            h1{
+                font-size: 3.5rem;
+            }
+            h2{
+                font-size: 2.2rem;
+                font-family: va.$fuente_hack;
+            }
+            p{
+                font-size: 2rem;
+                color: #c6c6c6;
+                font-family: va.$fuente_hack;
+                font-weight: 700;
+                line-height: 1.6;
+            }
+            .portada-btn{
+                display: flex;
+                column-gap: 2rem;
+                justify-content: center;
+                align-items: center;
+                padding-top: 4rem;
+                width: 100%;
+                button{
+                    width: 40%;
+                    p{
+                        font-family: va.$fuente_hack;
+                        font-size: 2rem;
+                        font-weight: 700;
+                    }
                 }
             }
         }
 
+        .portada-img{
+           
+        }
     }
 }
 
@@ -158,6 +190,7 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 4rem;
+        grid-column-gap: 2rem;
         align-items: center;
         
         @include telefono{
@@ -173,9 +206,11 @@
         }
 
         img{
-            width: 90%;
+            width: 100%;
         }
-
+        .informacion-caracteristicas{
+            justify-self: center;
+        }
         .inf-caracteristicas{
             width: 100%;
             h4{
@@ -193,22 +228,23 @@
         }
 
         .inf-home-lista{
-            display: flex;
-            justify-content: center;
-            gap: 0;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-column-gap:0;
             @include telefono{
-                gap: 0 1rem;
+                grid-column-gap:0;
             }
             @include tablet{
-                gap: 0 6rem;
+                grid-column-gap:0;
             }
         
             @include desktop{
-                gap: 0 8rem;
+                grid-column-gap:0;
             }
         }
 
         .home-lista{
+            justify-self: center;
             list-style-type: circle;
             display: flex;
             flex-direction: column;

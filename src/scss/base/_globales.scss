@@ -26,10 +26,11 @@ p {
 .contenedor {
    // scroll-snap-align: start;
     width: 95%;
-    max-width: 150rem;
+    //max-width: 150rem;
+    max-width: 120rem;
     margin: 0 auto;
     padding: 5rem 4rem;
-    background: linear-gradient(to bottom, #0000008e 10%, #0a007a00 50%, #0000008d 100%);
+    background: linear-gradient(to bottom, #0000008e 10%, #00000091 50%, #0000008d 100%);
 }
 a {
     text-decoration: none;
