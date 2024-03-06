@@ -1,0 +1,10 @@
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 3rem;
+}
+.tarjeta .tarjeta-descripcion {
+  text-align: center;
+}
+/*# sourceMappingURL=tarjeta.css.map */

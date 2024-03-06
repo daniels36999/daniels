@@ -4,6 +4,8 @@ import Footer from '../templates/footer';
 import Boton from '../templates/recursos/botones';
 import Consola from '../templates/recursos/consola';
 import imagenes from '../../assets/imagenes';
+import Tarjeta from '../templates/recursos/tarjeta';
+  
   
 
 const Home = () => {
@@ -52,7 +54,7 @@ return (
                         </div>
                     </div>
                     <div className='portada-img'>
-                        <img src={imagenes.bg} alt="Imagen Logo"/>
+                        <Tarjeta />
                     </div>
                 </div>
             </div>

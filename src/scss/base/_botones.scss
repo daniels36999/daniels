@@ -115,6 +115,11 @@ box-shadow: none;
     justify-content: center;
     align-items: center;
     column-gap: 2rem;
+    p{
+        font-family: va.$fuente_hack;
+        font-weight: 700;
+        font-size: 2rem;
+    }
   }
   
   .btn2::after {

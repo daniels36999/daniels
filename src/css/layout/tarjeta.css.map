@@ -1,0 +1,1 @@
+{"version":3,"sources":["layout/tarjeta.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;EACA;;AAEA;EACI","file":"tarjeta.css","sourcesContent":[".tarjeta{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    row-gap: 3rem;\r\n\r\n    .tarjeta-descripcion{\r\n        text-align: center;\r\n        \r\n    }\r\n}"]}

@@ -1,0 +1,61 @@
+@use 'base/variables' as va;
+
+.tarjeta,
+.tarjeta-img,
+.tarjeta-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarjeta{
+    flex-direction: column;
+    row-gap: 3rem;
+    padding: 2rem;
+
+    border: 3px solid #000000;
+    border-radius: 20px;
+    background: #000000b5;
+
+    .tarjeta-img{
+        background-image: url(../assets/img/bit.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 10px;
+        height: 10rem;
+        width: 100%;
+        margin-bottom: 4rem;
+        img{
+            max-height: 100px;
+            max-width: 100px;
+            border-radius: 50%;
+            border: 3px solid #00010764;
+            margin-bottom: -10rem;
+        }
+    }
+
+    .tarjeta-descripcion{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        p, h3{
+            font-family: va.$fuente_hack;
+        }
+    }
+
+    .tarjeta-btn{
+        width: 100%;
+        z-index: 1;
+        button{
+            min-height: 5rem;
+            width: 70%;
+            svg{
+                height: 30px; 
+                width: 30px;
+                stroke: va.$color_linkedin;
+            }
+        }
+    }
+}

@@ -22,6 +22,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Courier+Prime:wght@400;700&family=Inconsolata&family=Rationale&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Titan+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lilita+One&family=Madimi+One&family=Piedra&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Courier+Prime:wght@400;700&family=Inconsolata&family=Rationale&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Titan+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lilita+One&family=Madimi+One&family=Piedra&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -544,6 +547,11 @@ body {
   justify-content: center;
   align-items: center;
   column-gap: 2rem;
+}
+.btn2 p {
+  font-family: "Anonymous Pro", Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
 }
 
 .btn2::after {
@@ -1123,6 +1131,62 @@ body {
   font-size: 0.09rem;
 }
 
+.tarjeta,
+.tarjeta-img,
+.tarjeta-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tarjeta {
+  flex-direction: column;
+  row-gap: 3rem;
+  padding: 2rem;
+  border: 3px solid #000000;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.7098039216);
+}
+.tarjeta .tarjeta-img {
+  background-image: url(../assets/img/bit.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 10px;
+  height: 10rem;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+.tarjeta .tarjeta-img img {
+  max-height: 100px;
+  max-width: 100px;
+  border-radius: 50%;
+  border: 3px solid rgba(0, 1, 7, 0.3921568627);
+  margin-bottom: -10rem;
+}
+.tarjeta .tarjeta-descripcion {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+.tarjeta .tarjeta-descripcion p, .tarjeta .tarjeta-descripcion h3 {
+  font-family: "Anonymous Pro", Helvetica, sans-serif;
+}
+.tarjeta .tarjeta-btn {
+  width: 100%;
+  z-index: 1;
+}
+.tarjeta .tarjeta-btn button {
+  min-height: 5rem;
+  width: 70%;
+}
+.tarjeta .tarjeta-btn button svg {
+  height: 30px;
+  width: 30px;
+  stroke: #0077b5;
+}
+
 .informacion-texto {
   margin: 0;
   text-align: center;
@@ -1146,7 +1210,7 @@ body {
   z-index: -1;
 }
 .portada .contenido-portada {
-  background-color: rgba(0, 0, 0, 0.8901960784);
+  background-color: rgba(0, 0, 0, 0.6392156863);
   width: 100%;
   z-index: -1;
 }

@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/daniels/static/css/main.f106699f.css",
-    "main.js": "/daniels/static/js/main.39f0f8d2.js",
+    "main.css": "/daniels/static/css/main.72ed2be7.css",
+    "main.js": "/daniels/static/js/main.0e5a111f.js",
+    "static/media/bit.gif": "/daniels/static/media/bit.459627372cc63d5ae39b.gif",
+    "static/media/foto.jpg": "/daniels/static/media/foto.eddbe7ff6239fa3d4f09.jpg",
     "static/media/footer.jpg": "/daniels/static/media/footer.b37833e9b18c19a511e2.jpg",
     "static/media/fondo.jpg": "/daniels/static/media/fondo.a52a3128066414369ec5.jpg",
+    "static/media/electronica.jpg": "/daniels/static/media/electronica.83449cb1ca239fb3733c.jpg",
     "static/media/logo.png": "/daniels/static/media/logo.54cef98e1085447aa494.png",
-    "static/media/icon1.png": "/daniels/static/media/icon1.7291bbed091de6a62345.png",
-    "static/media/icon2.png": "/daniels/static/media/icon2.db558337a7d26879d2b7.png",
-    "static/media/icon3.png": "/daniels/static/media/icon3.d5dc5759f03de03987fd.png",
     "static/media/bg.jpg": "/daniels/static/media/bg.faa65b361858c116b699.jpg",
     "index.html": "/daniels/index.html",
-    "main.f106699f.css.map": "/daniels/static/css/main.f106699f.css.map",
-    "main.39f0f8d2.js.map": "/daniels/static/js/main.39f0f8d2.js.map"
+    "main.72ed2be7.css.map": "/daniels/static/css/main.72ed2be7.css.map",
+    "main.0e5a111f.js.map": "/daniels/static/js/main.0e5a111f.js.map"
   },
   "entrypoints": [
-    "static/css/main.f106699f.css",
-    "static/js/main.39f0f8d2.js"
+    "static/css/main.72ed2be7.css",
+    "static/js/main.0e5a111f.js"
   ]
 }
